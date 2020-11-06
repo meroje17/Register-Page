@@ -1,0 +1,175 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  background: no-repeat center/100% url(/images/bg-intro-desktop.png),
+    hsl(0, 100%, 74%);
+}
+
+.input:focus,
+input,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
+/* INTRODUCTION */
+
+.register-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 80vw;
+  margin: 10vh 10vw;
+}
+
+.introduction,
+.content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+/* INTRODUCTION */
+
+.introduction {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.introduction h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 45px;
+  color: white;
+}
+
+.introduction p {
+  margin-top: -10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+}
+
+/* CONTENT */
+
+.content {
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.content #try {
+  background: hsl(248, 32%, 49%);
+  width: 90%;
+  height: 12%;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  box-shadow: 0 5px 0px hsl(249, 10%, 26%, 0.3);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: white;
+}
+
+.content #try:hover {
+  background: #58537b;
+}
+
+.content .form {
+  background: white;
+  width: 90%;
+  height: 85%;
+  margin-top: 3%;
+  border-radius: 12px;
+  box-shadow: 0 5px 0px hsl(249, 10%, 26%, 0.3);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form .input {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 80%;
+  padding: 2.5%;
+  border: 1px solid lightgray;
+  margin-top: 3%;
+  height: 7%;
+  border-radius: 6px;
+}
+
+.form a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: hsl(154, 59%, 51%);
+  border: 1px solid hsl(154, 59%, 51%);
+  box-shadow: 0 3px 0px hsl(124, 60%, 28%, 0.4);
+  width: 85%;
+  margin-top: 4%;
+  height: 12%;
+  border-radius: 6px;
+}
+
+.form a:hover {
+  transform: scale(1.01);
+}
+
+.form p {
+  height: 15px;
+  font-size: 12px;
+  text-align: center;
+  color: lightgray;
+  width: 85%;
+  margin-top: 2.5%;
+  margin-bottom: 0;
+  display: block;
+  height: 12%;
+  border-radius: 6px;
+}
+
+.form p .red {
+  color: hsl(0, 100%, 74%);
+}
+
+input {
+  height: 100%;
+  flex: 1;
+  padding-left: 5%;
+  padding-right: 5%;
+  border: none;
+  font-weight: bold;
+}
+
+svg {
+  display: block;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 2%;
+  display: none;
+}
+
+form .input .selected {
+  border-color: hsl(248, 32%, 49%);
+}
+
+form .input .selected {
+  border-color: hsl(0, 100%, 74%);
+}
+
+svg .error {
+  display: initial;
+}
