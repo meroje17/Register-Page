@@ -130,6 +130,19 @@ button:focus {
   transform: scale(1.01);
 }
 
+.form .submit.error {
+  animation: 0.5s shake;
+}
+
+@keyframes shake {
+  25% {
+    transform: translateX(-5px);
+  }
+  75% {
+    transform: translateX(5px);
+  }
+}
+
 .form p {
   height: 15px;
   font-size: 12px;

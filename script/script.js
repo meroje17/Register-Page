@@ -2,7 +2,7 @@
 
 let inputsBorders = document.querySelectorAll(".form .input");
 let inputs = document.querySelectorAll("input");
-let submitButton = document.querySelector("#submit");
+let submitButton = document.querySelector(".submit");
 let svgs = document.querySelectorAll("svg");
 let values = [];
 
@@ -17,11 +17,12 @@ inputsBorders.forEach((element) =>
 
 // Call when user submit form.
 
-submitButton.addEventListener("click", function () {
+submitButton.addEventListener("click", function (e) {
+  e.preventDefault;
   removeAllClassList();
   retrieveAllValues();
   if (!isFieldEmpty()) {
-    everythingsGood;
+    everythingsGood();
   }
 });
 
@@ -46,6 +47,10 @@ function retrieveAllValues() {
 function error(index) {
   inputsBorders[index].classList.add("error");
   svgs[index].classList.add("error");
+  submitButton.classList.add("error");
+  setTimeout(() => {
+    submitButton.classList.remove("error");
+  }, 500);
   values = [];
 }
 
